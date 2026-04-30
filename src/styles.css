@@ -391,35 +391,44 @@ main {
 footer {
   background: var(--color-secondary);
   color: white;
-  padding: 60px 0 24px;
+  padding: 60px 0 40px;
 }
 
 .footer-container {
   display: flex;
-  flex-direction: column;
-  gap: 48px;
-}
-
-.footer-main {
-  display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   gap: 48px;
 }
 
 .footer-brand {
   flex: 1;
-  min-width: 250px;
-  max-width: 350px;
+  min-width: 280px;
+  max-width: 400px;
 }
 
-.footer-brand .logo {
-  color: white;
-  margin-bottom: 12px;
+.footer-lfn-logo {
+  height: 40px;
+  margin-bottom: 16px;
 }
 
 .footer-brand p {
   color: rgba(255, 255, 255, 0.7);
   font-size: 0.9rem;
+  margin-bottom: 8px;
+}
+
+.footer-links-small {
+  font-size: 0.8rem !important;
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.footer-links-small a {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-links-small a:hover {
+  color: var(--color-primary-light);
 }
 
 .footer-links {
@@ -454,24 +463,10 @@ footer {
   color: var(--color-primary-light);
 }
 
-.footer-bottom {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 16px;
-  padding-top: 24px;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.footer-bottom p {
-  color: rgba(255, 255, 255, 0.5);
-  font-size: 0.85rem;
-}
-
 .footer-social {
   display: flex;
   gap: 16px;
+  align-items: flex-start;
 }
 
 .footer-social a {
@@ -533,17 +528,12 @@ footer {
     font-size: 1rem;
   }
 
-  .footer-main {
+  .footer-container {
     flex-direction: column;
   }
 
   .footer-links {
     flex-direction: column;
     gap: 32px;
-  }
-
-  .footer-bottom {
-    flex-direction: column;
-    text-align: center;
   }
 }
