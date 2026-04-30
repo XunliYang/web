@@ -55,6 +55,19 @@ img {
   display: block;
 }
 
+/* LF Projects Banner */
+.lf-banner {
+  background: #1a1a2e;
+  padding: 8px 0;
+  text-align: center;
+}
+
+.lf-banner-img {
+  height: 24px;
+  width: auto;
+  margin: 0 auto;
+}
+
 /* Navbar */
 .navbar {
   position: fixed;
@@ -174,6 +187,18 @@ img {
   transition: all 0.3s;
 }
 
+.mobile-toggle.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.mobile-toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.mobile-toggle.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
 /* Main Content */
 main {
   padding-top: var(--header-height);
@@ -241,6 +266,23 @@ main {
 .btn-secondary:hover {
   background: var(--color-bg-alt);
   color: var(--color-primary-dark);
+}
+
+.btn-nav {
+  display: inline-block;
+  padding: 8px 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border-radius: 6px;
+  background: var(--color-primary);
+  color: white;
+  transition: all 0.2s;
+}
+
+.btn-nav:hover {
+  background: var(--color-primary-dark);
+  color: white;
+  transform: translateY(-1px);
 }
 
 /* Features */
