@@ -3,18 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>A2A-T - Agent to Agent Transaction Protocol</title>
+  <title>OpenAN - Open Autonomous Network</title>
   <link rel="stylesheet" href="./src/styles.css">
 </head>
 <body>
+  <div class="lf-banner">
+    <a href="https://www.linuxfoundation.org/projects" target="_blank" rel="noopener">
+      <img src="https://nephio.org/wp-content/uploads/banners/lfprojects_banner_other.svg" alt="The Linux Foundation Projects" class="lf-banner-img">
+    </a>
+  </div>
   <nav class="navbar">
     <div class="container nav-container">
       <a href="#" class="logo">
         <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
-          <circle cx="16" cy="16" r="14" stroke="#3b82f6" stroke-width="2"/>
-          <path d="M10 16h12M16 10v12" stroke="#3b82f6" stroke-width="2" stroke-linecap="round"/>
+          <circle cx="16" cy="16" r="14" stroke="currentColor" stroke-width="2"/>
+          <path d="M8 16h16M16 8v16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
         </svg>
-        <span>A2A-T</span>
+        <span>OpenAN</span>
       </a>
       <button class="mobile-toggle" id="mobileToggle">
         <span></span>
@@ -23,23 +28,29 @@
       </button>
       <ul class="nav-links" id="navLinks">
         <li class="dropdown">
-          <a href="#about" class="nav-link">About ▾</a>
+          <a href="#about" class="nav-link">About</a>
           <div class="dropdown-menu">
+            <a href="#about-openan">About OpenAN</a>
             <a href="#charter">Charter</a>
-            <a href="#join">Join</a>
-            <a href="#tsc">Technical Steering Committee</a>
+            <a href="#contact">Contact</a>
           </div>
         </li>
-        <li><a href="#projects" class="nav-link">Projects</a></li>
-        <li><a href="#cases" class="nav-link">Use Cases</a></li>
         <li class="dropdown">
-          <a href="#news" class="nav-link">News ▾</a>
+          <a href="#resources" class="nav-link">Resources</a>
+          <div class="dropdown-menu">
+            <a href="https://wiki.openan.io" target="_blank">Wiki</a>
+          </div>
+        </li>
+        <li><a href="#use-cases" class="nav-link">Use Cases</a></li>
+        <li class="dropdown">
+          <a href="#news" class="nav-link">News</a>
           <div class="dropdown-menu">
             <a href="#announcements">Announcements</a>
             <a href="#blog">Blog</a>
-            <a href="#wiki">Wiki</a>
+            <a href="events.html">Events</a>
           </div>
         </li>
+        <li><a href="https://www.lfnetworking.org/membership/join/" class="btn btn-nav" target="_blank">Join</a></li>
       </ul>
     </div>
   </nav>
