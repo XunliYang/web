@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>OpenAN - Open Autonomous Network</title>
+  <title>OpenAN - Open Autonomous Networks for Telecom</title>
   <link rel="stylesheet" href="./src/styles.css">
 </head>
 <body>
@@ -14,7 +14,7 @@
   </div>
   <nav class="navbar">
     <div class="container nav-container">
-      <a href="#" class="logo">
+      <a href="index.html" class="logo">
         <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
           <circle cx="16" cy="16" r="14" stroke="currentColor" stroke-width="2"/>
           <path d="M8 16h16M16 8v16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
@@ -30,94 +30,587 @@
         <li class="dropdown">
           <a href="#about" class="nav-link">About</a>
           <div class="dropdown-menu">
-            <a href="#charter">Charter</a>
+            <a href="#mission">Mission</a>
             <a href="leadership.html">Leadership</a>
             <a href="tsc.html">TSC</a>
+            <a href="#governance">Governance</a>
           </div>
         </li>
         <li class="dropdown">
           <a href="#resources" class="nav-link">Resources</a>
           <div class="dropdown-menu">
             <a href="https://wiki.openan.io" target="_blank" rel="noopener">Wiki</a>
+            <a href="events.html">Events</a>
+            <a href="#roadmap">Roadmap</a>
           </div>
         </li>
         <li><a href="usecases.html" class="nav-link">Use Cases</a></li>
-        <li class="dropdown">
-          <a href="#news" class="nav-link">News</a>
-          <div class="dropdown-menu">
-            <a href="#blog">Blog</a>
-          </div>
-        </li>
+        <li><a href="#get-involved" class="nav-link">Get Involved</a></li>
         <li><a href="https://www.lfnetworking.org/membership/join/" class="btn btn-nav" target="_blank" rel="noopener">Join</a></li>
       </ul>
     </div>
   </nav>
 
   <main>
+    <!-- Hero Section -->
     <section class="hero">
       <div class="container">
-        <h1>OpenAN</h1>
-        <p class="hero-description">OpenAN is a suite of open-source projects for autonomous networks. It supports the development and deployment of telecom agents, enabling multi-vendor, cross-layer, and cross-domain integration, and accelerating the evolution of autonomous network towards L4-L5.</p>
+        <div class="hero-badge">
+          <span class="badge badge-lfn">LF Networking Candidate</span>
+          <span class="badge badge-year">Launched 2026</span>
+        </div>
+        <h1>Closed-loop autonomous networks, open by design.</h1>
+        <p class="hero-description">OpenAN is an open, vendor-neutral framework for end-to-end autonomous networks. It accelerates cross-layer, cross-domain integration of telecom-specific agents and enables multi-agent collaboration so global operators can deploy AN with efficient orchestration and interaction.</p>
+        <div class="hero-subtitle">Kickoff contributors: <strong>China Mobile</strong> · <strong>Huawei</strong> · More partners joining</div>
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <span class="hero-stat-number">3</span>
+            <span class="hero-stat-label">Seed Components</span>
+          </div>
+          <div class="hero-stat">
+            <span class="hero-stat-number">L5</span>
+            <span class="hero-stat-label">Target Autonomy Level</span>
+          </div>
+          <div class="hero-stat">
+            <span class="hero-stat-number">4</span>
+            <span class="hero-stat-label">A2A-T Extensions</span>
+          </div>
+          <div class="hero-stat">
+            <span class="hero-stat-number">Apache 2.0</span>
+            <span class="hero-stat-label">Open Source License</span>
+          </div>
+        </div>
         <div class="hero-buttons">
-          <a href="#get-started" class="btn btn-primary">Get Started</a>
-          <a href="#spec" class="btn btn-secondary">View Specification</a>
+          <a href="#get-involved" class="btn btn-primary">Get Started</a>
+          <a href="#architecture" class="btn btn-secondary">Explore Architecture</a>
         </div>
       </div>
     </section>
 
-    <section class="members">
+    <!-- Mission Section -->
+    <span id="about"></span>
+    <section id="mission" class="mission-section">
       <div class="container">
-        <h2>Supporting members</h2>
-        <div class="members-carousel" id="membersCarousel" aria-label="Supporting members logos carousel">
-          <div class="carousel-track">
-            <div class="member-logo">
-              <img src="https://www.chinamobileltd.com/etc.clientlibs/chinamobile/clientlibs/clientlib-base/resources/images/logo.png" alt="China Mobile" loading="lazy">
+        <h2 class="section-title"><span class="section-slash">/</span> Mission</h2>
+        <p class="section-subtitle">An open foundation for autonomous telecom networks.</p>
+        <p class="mission-text">OpenAN brings the operators, vendors, and innovators of the telecom industry together around shared standards, shared skills, and a shared roadmap toward Autonomous Networks Level 5.</p>
+        
+        <div class="mission-grid">
+          <div class="mission-card">
+            <div class="mission-number">01</div>
+            <h3>E2E Closed Loop</h3>
+            <h4>Multi-agent collaboration across every layer.</h4>
+            <p>Accelerate cross-layer and cross-domain integration and deployment of telecom-specific agents. OpenAN enables multi-agent collaboration so global operators benefit from efficient orchestration and interaction across the AN stack.</p>
+            <a href="#architecture" class="link-arrow">See the architecture</a>
+          </div>
+          <div class="mission-card">
+            <div class="mission-number">02</div>
+            <h3>Vendor Neutral</h3>
+            <h4>Built on industry-shared standards.</h4>
+            <p>Grounded in industry standards (SPG, A2A-T, intent API), OpenAN promotes vendor-neutral, scenario-based skills, components, knowledge, and practices. A collaboration ecosystem across the whole telecom industry collectively enhances AN capability.</p>
+            <a href="#community" class="link-arrow">Join the community</a>
+          </div>
+          <div class="mission-card">
+            <div class="mission-number">03</div>
+            <h3>Future Evolution</h3>
+            <h4>Toward Autonomous Networks Level 5.</h4>
+            <p>OpenAN aims to be the de facto standard for autonomous network operation in telecom, and to explore integration and collaboration for the next generation of intelligent systems aimed at AN L5.</p>
+            <a href="#roadmap" class="link-arrow">View the roadmap</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Architecture Section -->
+    <section id="architecture" class="architecture-section">
+      <div class="container">
+        <h2 class="section-title"><span class="section-slash">/</span> Architecture</h2>
+        <p class="section-subtitle">A multi-agent collaboration framework for OSS, EMS, and the network layer.</p>
+        <p class="architecture-intro">OpenAN sits between the service layer (OSS copilots, optimization and fault agents) and the network layer (RAN, fixed access, IP, core). The A2A-T SDK extends Google's A2A protocol with telecom-grade primitives so agents in either layer can register, discover, negotiate, and act safely on the network.</p>
+        
+        <div class="architecture-diagram">
+          <div class="arch-layer arch-layer-service">
+            <div class="arch-layer-label">Service Layer</div>
+            <div class="arch-layer-content">
+              <div class="arch-box">OSS Copilots</div>
+              <div class="arch-box">Optimization Agents</div>
+              <div class="arch-box">Fault Management</div>
             </div>
-            <div class="member-logo">
-              <img src="https://www-file.huawei.com/-/media/HW/Header/Huawei-Logo.svg" alt="Huawei" loading="lazy">
+          </div>
+          <div class="arch-connector">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 5v14M5 12l7 7 7-7"/>
+            </svg>
+          </div>
+          <div class="arch-layer arch-layer-sdk">
+            <div class="arch-layer-label">A2A-T SDK</div>
+            <div class="arch-layer-content">
+              <div class="arch-box arch-box-highlight">JSON-RPC + HTTP+REST</div>
             </div>
-            <div class="member-logo">
-              <img src="./src/images/logo-vodafone.png" alt="Vodafone" loading="lazy">
+          </div>
+          <div class="arch-connector">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 5v14M5 12l7 7 7-7"/>
+            </svg>
+          </div>
+          <div class="arch-layer arch-layer-orchestration">
+            <div class="arch-layer-label">Orchestration Layer</div>
+            <div class="arch-layer-content">
+              <div class="arch-box">Orchestration Center</div>
+              <div class="arch-box">Registry Center</div>
             </div>
-            <div class="member-logo">
-              <img src="./src/images/logo-orange.png" alt="Orange" loading="lazy">
+          </div>
+          <div class="arch-connector">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 5v14M5 12l7 7 7-7"/>
+            </svg>
+          </div>
+          <div class="arch-layer arch-layer-network">
+            <div class="arch-layer-label">Network Layer</div>
+            <div class="arch-layer-content">
+              <div class="arch-box">RAN</div>
+              <div class="arch-box">Fixed Access</div>
+              <div class="arch-box">IP</div>
+              <div class="arch-box">Core</div>
             </div>
-            <div class="member-logo">
-              <img src="https://www.telefonica.com/content/dam/telefonica-com/images/logo-telefonica-new.png" alt="Telefónica" loading="lazy">
+          </div>
+        </div>
+        <a href="#components" class="link-arrow centered-link">Explore the components</a>
+      </div>
+    </section>
+
+    <!-- Seed Components Section -->
+    <span id="resources"></span>
+    <section id="components" class="components-section">
+      <div class="container">
+        <h2 class="section-title"><span class="section-slash">/</span> Seed Components</h2>
+        <p class="section-subtitle">Three components, open sourced together.</p>
+        <p class="components-intro">In June 2026 at DTW-Copenhagen, OpenAN open sources its three seed components. From September to December, scenario-based solution packages are released through joint innovation with operators.</p>
+        
+        <div class="components-grid">
+          <div class="component-card">
+            <div class="component-number">01</div>
+            <div class="component-type">SDK</div>
+            <h3>A2A-T SDK</h3>
+            <p>A telecom-grade extension of the A2A protocol, designed for deterministic, network-scenario-compliant cross-layer agent collaboration. Supports JSON-RPC and HTTP+REST.</p>
+            <div class="component-tags">
+              <span class="component-tag">JSON-RPC</span>
+              <span class="component-tag">HTTP+REST</span>
+              <span class="component-tag">Apache 2.0</span>
             </div>
-            <div class="member-logo">
-              <img src="./src/images/logo-zte.png" alt="ZTE" loading="lazy">
+          </div>
+          <div class="component-card">
+            <div class="component-number">02</div>
+            <div class="component-type">Discovery</div>
+            <h3>Registry Center</h3>
+            <p>The "agent labor market" — a yellow-pages service that finds and manages agent addresses, registers skills, handles health management, and uses LLM-aided retrieval to map intents to the right agent.</p>
+            <div class="component-tags">
+              <span class="component-tag">Agent Cards</span>
+              <span class="component-tag">Skill Registry</span>
+              <span class="component-tag">RAG Retrieval</span>
             </div>
-            <div class="member-logo">
-              <img src="https://www.infovista.com/content/dam/infovista/images/logo-infovista.png" alt="Infovista" loading="lazy">
-            </div>
-            <div class="member-logo">
-              <img src="https://www.inspur.com/etc.clientlibs/inspur/clientlibs/clientlib-common/resources/images/logo-inspur-en.png" alt="Inspur" loading="lazy">
+          </div>
+          <div class="component-card">
+            <div class="component-number">03</div>
+            <div class="component-type">Workflow</div>
+            <h3>Orchestration Center</h3>
+            <p>A hub that orchestrates agents into reliable, reusable workflows via a workflow canvas, condition editor, property manager, and a workflow market — bridging manual design and autonomous programming.</p>
+            <div class="component-tags">
+              <span class="component-tag">Workflow Canvas</span>
+              <span class="component-tag">Autonomous Programming</span>
+              <span class="component-tag">Knowledge & RAG</span>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="get-involved">
+    <!-- A2A-T Extensions Section -->
+    <section id="a2at-extensions" class="extensions-section">
       <div class="container">
-        <h2>Get Involved</h2>
-        <div class="involved-grid">
-          <div class="involved-card">
-            <h3>Join the Community</h3>
-            <p>Connect with developers and organizations building autonomous network solutions.</p>
-            <a href="https://www.lfnetworking.org/membership/join/" class="link-arrow" target="_blank" rel="noopener noreferrer">Join Now</a>
+        <h2 class="section-title"><span class="section-slash">/</span> A2A-T Extensions</h2>
+        <p class="section-subtitle">Telecom-grade primitives on top of the A2A protocol.</p>
+        <p class="extensions-intro">A2A is the foundation for inter-agent communication. For telecom, A2A-T adds four extensions so agents can describe tasks precisely, share network events efficiently, negotiate around ambiguity, and act on the network only with explicit authorization.</p>
+        
+        <div class="extensions-grid">
+          <div class="extension-card">
+            <div class="extension-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                <polyline points="14 2 14 8 20 8"/>
+                <line x1="16" y1="13" x2="8" y2="13"/>
+                <line x1="16" y1="17" x2="8" y2="17"/>
+              </svg>
+            </div>
+            <h4>Task-T Schema</h4>
+            <p>A structured task schema that defines a deterministic prompt for each task, eliminating the ambiguity of free-form requests between agents.</p>
           </div>
-          <div class="involved-card">
-            <h3>Contribute Code</h3>
-            <p>Help shape the open-source projects by contributing to our implementations.</p>
-            <a href="https://github.com/openan" class="link-arrow" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+          <div class="extension-card">
+            <div class="extension-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+              </svg>
+            </div>
+            <h4>Sub-Pub-T Eventing</h4>
+            <p>Network event subscription and publication. Optimized for the data/event reporting patterns that telecom O&M relies on at scale.</p>
           </div>
-          <div class="involved-card">
-            <h3>Read the Wiki</h3>
-            <p>Explore documentation and guides to get started with OpenAN.</p>
-            <a href="https://wiki.openan.io" class="link-arrow" target="_blank" rel="noopener noreferrer">Read Wiki</a>
+          <div class="extension-card">
+            <div class="extension-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M8 14s1.5 2 4 2 4-2 4-2"/>
+                <line x1="9" y1="9" x2="9.01" y2="9"/>
+                <line x1="15" y1="9" x2="15.01" y2="9"/>
+              </svg>
+            </div>
+            <h4>Negotiation-T Control</h4>
+            <p>Controllable, structured negotiation between agents to resolve ambiguity and confirm feasibility before action is taken.</p>
           </div>
+          <div class="extension-card">
+            <div class="extension-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+              </svg>
+            </div>
+            <h4>Authorization-T Security</h4>
+            <p>Dynamic security: agent card and skill limitations plus explicit authorization before any agent makes network-changing operations.</p>
+          </div>
+          <div class="extension-card">
+            <div class="extension-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                <line x1="8" y1="21" x2="16" y2="21"/>
+                <line x1="12" y1="17" x2="12" y2="21"/>
+              </svg>
+            </div>
+            <h4>Agent Cards Base</h4>
+            <p>A2A base fields — name, description, URL, provider, version, capabilities, authentication, default input modes, and skills — fully reused by A2A-T.</p>
+          </div>
+          <div class="extension-card">
+            <div class="extension-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+              </svg>
+            </div>
+            <h4>Transport Protocol</h4>
+            <p>JSON-RPC for fixed-format, one-way messages; HTTP+REST for stateful, long-lived connections over URL-addressable resources.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Use Case Preview Section -->
+    <section id="usecase-preview" class="usecase-preview-section">
+      <div class="container">
+        <h2 class="section-title"><span class="section-slash">/</span> Multi-Agent Use Case</h2>
+        <p class="section-subtitle">Home broadband complaint handling.</p>
+        <p class="usecase-intro">When a customer calls in with "no internet for two days" or "YouTube is slow", OpenAN orchestrates the right agents end-to-end — billing, CDN, RAN, and vendor-specific fault agents — and hands off to a human expert only when needed.</p>
+        
+        <div class="usecase-workflow">
+          <div class="workflow-header">
+            <h3>Workflow</h3>
+            <p>From call center to NOC, with humans in the loop.</p>
+          </div>
+          <div class="workflow-steps">
+            <div class="workflow-step">
+              <div class="workflow-step-number">1</div>
+              <div class="workflow-step-content">
+                <h4>Intent capture</h4>
+                <p>Call center receives the customer complaint and forwards intent to the Complaint Handling Agent.</p>
+              </div>
+            </div>
+            <div class="workflow-step">
+              <div class="workflow-step-number">2</div>
+              <div class="workflow-step-content">
+                <h4>Workflow recall</h4>
+                <p>The Orchestration Center selects the workflow that matches the complaint type.</p>
+              </div>
+            </div>
+            <div class="workflow-step">
+              <div class="workflow-step-number">3</div>
+              <div class="workflow-step-content">
+                <h4>Agent retrieval</h4>
+                <p>The Registry Center returns matching agent cards (customer care, billing, CDN, vendor FAN, etc.).</p>
+              </div>
+            </div>
+            <div class="workflow-step">
+              <div class="workflow-step-number">4</div>
+              <div class="workflow-step-content">
+                <h4>Multi-agent execution</h4>
+                <p>Agents collaborate over A2A-T to diagnose and resolve the issue.</p>
+              </div>
+            </div>
+            <div class="workflow-step">
+              <div class="workflow-step-number">5</div>
+              <div class="workflow-step-content">
+                <h4>Expert handoff</h4>
+                <p>When the workflow cannot resolve the case, the NOC expert is brought in with full context.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="usecases.html" class="link-arrow centered-link">View all use cases</a>
+      </div>
+    </section>
+
+    <!-- Roadmap Section -->
+    <section id="roadmap" class="roadmap-section">
+      <div class="container">
+        <h2 class="section-title"><span class="section-slash">/</span> Roadmap</h2>
+        <p class="section-subtitle">From kickoff to commercial verification.</p>
+        <p class="roadmap-intro">OpenAN launched at MWC-Barcelona in March 2026 and open sourced its seed code, donating to LF Networking in June 2026 at DTW-Copenhagen. Commercial verification is planned through 2027.</p>
+        
+        <div class="roadmap-timeline">
+          <div class="timeline-item">
+            <div class="timeline-date">
+              <span class="timeline-year">2026.03</span>
+              <span class="timeline-event">MWC Barcelona</span>
+            </div>
+            <div class="timeline-content">
+              <h4>Kickoff (Launch)</h4>
+              <p>China Mobile and Huawei announce OpenAN; development and verification begin in earnest.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">
+              <span class="timeline-year">2026.06</span>
+              <span class="timeline-event">DTW Copenhagen</span>
+            </div>
+            <div class="timeline-content">
+              <h4>Seed Code & LFN Donation</h4>
+              <p>A2A-T SDK, Registry Center, and Orchestration Center are open sourced and donated to LF Networking.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">
+              <span class="timeline-year">2026.12</span>
+              <span class="timeline-event">TM Forum IHPP</span>
+            </div>
+            <div class="timeline-content">
+              <h4>Launch Innovations</h4>
+              <p>Scenario solution packages and more contributors join; OpenAN is positioned as an Innovation Hub Pioneer Project.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">
+              <span class="timeline-year">2027</span>
+              <span class="timeline-event">Commercial Verification</span>
+            </div>
+            <div class="timeline-content">
+              <h4>Commercial Verification</h4>
+              <p>Startup member review, ongoing maintenance, and commercial verification of OpenAN deployments by operators.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Get Involved Section -->
+    <section id="get-involved" class="get-involved-section">
+      <div class="container">
+        <h2 class="section-title"><span class="section-slash">/</span> Get Involved</h2>
+        <p class="section-subtitle">From zero to first contribution.</p>
+        <p class="get-involved-intro">OpenAN is a candidate LFN project. The seed code is being imported into the project-openan GitHub organization. The fastest way to get started is to read the charter, watch the repos, and join the community on Zulip.</p>
+        
+        <div class="get-involved-steps">
+          <div class="step-card">
+            <div class="step-number">01</div>
+            <h3>Read the Charter</h3>
+            <p>Start with the OpenAN Technical Charter to understand governance, scope, and how contributions are accepted.</p>
+            <a href="#get-involved" class="link-arrow">OpenAN Charter.md</a>
+          </div>
+          <div class="step-card">
+            <div class="step-number">02</div>
+            <h3>Watch the Repos</h3>
+            <p>The three seed components will land in the project-openan GitHub organization as the import completes.</p>
+            <div class="step-links">
+              <a href="https://github.com/project-openan/a2a-t-sdk" class="link-arrow" target="_blank" rel="noopener">a2a-t-sdk</a>
+              <a href="https://github.com/project-openan/registry-center" class="link-arrow" target="_blank" rel="noopener">registry-center</a>
+              <a href="https://github.com/project-openan/orchestration-center" class="link-arrow" target="_blank" rel="noopener">orchestration-center</a>
+            </div>
+          </div>
+          <div class="step-card">
+            <div class="step-number">03</div>
+            <h3>Join Zulip</h3>
+            <p>Real-time discussion happens on the LF Zulip. Subscribe to the community, support, and TSC channels.</p>
+            <div class="step-links">
+              <span class="code-badge">#lfn-openan-discussion</span>
+              <span class="code-badge">#lfn-openan-support</span>
+              <span class="code-badge">#lfn-openan-tsc</span>
+            </div>
+          </div>
+          <div class="step-card">
+            <div class="step-number">04</div>
+            <h3>CLA</h3>
+            <p>Contributions will be accepted under Apache 2.0 once the LFN-managed CLA is in place.</p>
+            <span class="status-badge">Coming soon</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Governance Section -->
+    <section id="governance" class="governance-section">
+      <div class="container">
+        <h2 class="section-title"><span class="section-slash">/</span> Governance</h2>
+        <p class="section-subtitle">Technical Steering Committee.</p>
+        <p class="governance-intro">OpenAN governance follows the LF Networking model: a Leadership Committee for project-level decisions and a Technical Steering Committee for technical direction. Disputes are resolved by majority vote.</p>
+        
+        <div class="governance-grid">
+          <div class="governance-card">
+            <h4>Project Roles</h4>
+            <p>Leadership Chair and Vice-Chair, Leadership Voting Members, TSC Chair and Vice-Chair, TSC Voting Members, committers, maintainers, and contributors.</p>
+          </div>
+          <div class="governance-card">
+            <h4>How roles are filled</h4>
+            <p>Defined in GOVERNING.md and CONTRIBUTING.md. Removal is by TSC or Leadership vote.</p>
+          </div>
+          <div class="governance-card">
+            <h4>Dispute resolution</h4>
+            <p>Decisions are typically reached by majority vote. The TSC is the top-level technical decision-making body and the body to which the LFN TAC looks for interfaces.</p>
+          </div>
+          <div class="governance-card">
+            <h4>Charter evolution</h4>
+            <p>Governance evolves through changes to the Charter, approved by the Leadership Committee.</p>
+          </div>
+        </div>
+        
+        <div class="tsc-section">
+          <h3 class="subsection-title"><span class="section-slash">/</span> TSC Members</h3>
+          <div class="tsc-grid">
+            <div class="tsc-member">
+              <div class="tsc-avatar">YY</div>
+              <div class="tsc-info">
+                <div class="tsc-name">Yijun Yu</div>
+                <div class="tsc-company">Huawei · Chair</div>
+              </div>
+            </div>
+            <div class="tsc-member">
+              <div class="tsc-avatar">ZL</div>
+              <div class="tsc-info">
+                <div class="tsc-name">Zhiyi Luo</div>
+                <div class="tsc-company">China Mobile · Co-Chair</div>
+              </div>
+            </div>
+            <div class="tsc-member">
+              <div class="tsc-avatar">BB</div>
+              <div class="tsc-info">
+                <div class="tsc-name">Bastien Bourgeois</div>
+                <div class="tsc-company">Orange</div>
+              </div>
+            </div>
+            <div class="tsc-member">
+              <div class="tsc-avatar">BT</div>
+              <div class="tsc-info">
+                <div class="tsc-name">Boonchoung Tansuthepverawongse</div>
+                <div class="tsc-company">AIS</div>
+              </div>
+            </div>
+            <div class="tsc-member">
+              <div class="tsc-avatar">EP</div>
+              <div class="tsc-info">
+                <div class="tsc-name">Eduardo M Panciera Molanes</div>
+                <div class="tsc-company">Telecom Argentina</div>
+              </div>
+            </div>
+            <div class="tsc-member">
+              <div class="tsc-avatar">UK</div>
+              <div class="tsc-info">
+                <div class="tsc-name">Ullas Krishnan</div>
+                <div class="tsc-company">Infosys</div>
+              </div>
+            </div>
+            <div class="tsc-member">
+              <div class="tsc-avatar">XS</div>
+              <div class="tsc-info">
+                <div class="tsc-name">Xiaobin Shi</div>
+                <div class="tsc-company">ZTE</div>
+              </div>
+            </div>
+            <div class="tsc-member">
+              <div class="tsc-avatar">ZS</div>
+              <div class="tsc-info">
+                <div class="tsc-name">Zhiqi Shi</div>
+                <div class="tsc-company">AsiaInfo</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="lfn-staff-section">
+          <h3 class="subsection-title"><span class="section-slash">/</span> LF Networking Staff</h3>
+          <div class="lfn-grid">
+            <div class="lfn-member">
+              <div class="lfn-avatar">AJ</div>
+              <div class="lfn-info">
+                <div class="lfn-name">Arpit Joshipura</div>
+                <div class="lfn-title">The Linux Foundation · Executive Director, LF Networking</div>
+              </div>
+            </div>
+            <div class="lfn-member">
+              <div class="lfn-avatar">CC</div>
+              <div class="lfn-info">
+                <div class="lfn-name">Casey Cain</div>
+                <div class="lfn-title">The Linux Foundation · Sr. Technical Community Architect</div>
+              </div>
+            </div>
+            <div class="lfn-member">
+              <div class="lfn-avatar">JL</div>
+              <div class="lfn-info">
+                <div class="lfn-name">Jill Lovato</div>
+                <div class="lfn-title">The Linux Foundation · Director, Marketing Communications</div>
+              </div>
+            </div>
+            <div class="lfn-member">
+              <div class="lfn-avatar">SS</div>
+              <div class="lfn-info">
+                <div class="lfn-name">Sunny Schatz</div>
+                <div class="lfn-title">The Linux Foundation · Marketing Communications Manager</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="project-assets">
+          <h3 class="subsection-title"><span class="section-slash">/</span> Project Assets</h3>
+          <div class="assets-grid">
+            <a href="#" class="asset-card">
+              <div class="asset-icon">📜</div>
+              <div class="asset-info">
+                <div class="asset-name">Technical Charter</div>
+                <div class="asset-desc">Apache 2.0</div>
+              </div>
+            </a>
+            <a href="https://github.com/project-openan" class="asset-card" target="_blank" rel="noopener">
+              <div class="asset-icon">📂</div>
+              <div class="asset-info">
+                <div class="asset-name">Repos</div>
+                <div class="asset-desc">github.com/project-openan</div>
+              </div>
+            </a>
+            <a href="#" class="asset-card">
+              <div class="asset-icon">✍</div>
+              <div class="asset-info">
+                <div class="asset-name">CLA</div>
+                <div class="asset-desc">Coming soon</div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="community" class="cta-section">
+      <div class="container">
+        <h2>Join the Project</h2>
+        <p class="cta-subtitle">The future of telecom is autonomous and open.</p>
+        <p class="cta-description">Subscribe to OpenAN updates, release announcements, community meeting notes, and how-to-contribute posts. Or jump straight to the code and the Zulip channels.</p>
+        <div class="cta-buttons">
+          <a href="https://www.lfnetworking.org/membership/join/" class="btn btn-primary" target="_blank" rel="noopener">Join Now</a>
+          <a href="https://github.com/project-openan" class="btn btn-secondary" target="_blank" rel="noopener">View on GitHub</a>
         </div>
       </div>
     </section>
@@ -134,26 +627,29 @@
         <div class="footer-col">
           <h4>About</h4>
           <ul>
-            <li><a href="#charter">Charter</a></li>
+            <li><a href="#mission">Mission</a></li>
             <li><a href="leadership.html">Leadership</a></li>
             <li><a href="tsc.html">TSC</a></li>
+            <li><a href="#governance">Governance</a></li>
           </ul>
         </div>
         <div class="footer-col">
           <h4>Resources</h4>
           <ul>
             <li><a href="https://wiki.openan.io" target="_blank" rel="noopener noreferrer">Wiki</a></li>
+            <li><a href="#roadmap">Roadmap</a></li>
           </ul>
         </div>
         <div class="footer-col">
-          <h4>News</h4>
+          <h4>Community</h4>
           <ul>
-            <li><a href="#blog">Blog</a></li>
+            <li><a href="usecases.html">Use Cases</a></li>
+            <li><a href="#get-involved">Get Involved</a></li>
           </ul>
         </div>
       </div>
       <div class="footer-social">
-        <a href="https://github.com/openan" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+        <a href="https://github.com/project-openan" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
             <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
           </svg>
