@@ -4,6 +4,15 @@ export default defineConfig({
   root: '.',
   publicDir: 'public',
   build: {
-    outDir: 'dist'
+    outDir: 'dist',
+    rollupOptions: {
+      input: {
+        main: './index.html',
+        leadership: './leadership.html',
+        tsc: './tsc.html',
+        events: './events.html',
+        usecases: './usecases.html'
+      }
+    }
   }
 })
