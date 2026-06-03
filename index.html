@@ -1,9 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>OpenAN - Open Autonomous Networks for Telecom</title>
+  <meta name="description" content="OpenAN is an open, vendor-neutral framework for end-to-end autonomous networks, accelerating cross-layer, cross-domain integration of telecom-specific agents and enabling multi-agent collaboration.">
+  <meta property="og:title" content="OpenAN - Open Autonomous Networks for Telecom">
+  <meta property="og:description" content="OpenAN is an open, vendor-neutral framework for end-to-end autonomous networks, accelerating cross-layer, cross-domain integration of telecom-specific agents and enabling multi-agent collaboration.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://openan.io/">
+  <meta property="og:image" content="https://openan.io/src/images/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="OpenAN - Open Autonomous Networks for Telecom">
+  <meta name="twitter:description" content="OpenAN is an open, vendor-neutral framework for end-to-end autonomous networks, accelerating cross-layer, cross-domain integration of telecom-specific agents and enabling multi-agent collaboration.">
+  <meta name="twitter:image" content="https://openan.io/src/images/og-image.png">
+  <link rel="icon" href="./src/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -31,7 +42,7 @@
       </button>
       <ul class="nav-links" id="navLinks">
         <li class="dropdown">
-          <a href="#about" class="nav-link">About</a>
+          <a href="#about" class="nav-link dropdown-toggle">About</a>
           <div class="dropdown-menu">
             <a href="#mission">Mission</a>
             <a href="leadership.html">Leadership</a>
@@ -40,7 +51,7 @@
           </div>
         </li>
         <li class="dropdown">
-          <a href="#resources" class="nav-link">Resources</a>
+          <a href="#resources" class="nav-link dropdown-toggle">Resources</a>
           <div class="dropdown-menu">
             <a href="https://wiki.openan.io" target="_blank" rel="noopener">Wiki</a>
             <a href="events.html">Events</a>
@@ -422,7 +433,7 @@
             <div class="step-number">01</div>
             <h3>Read the Charter</h3>
             <p>Start with the OpenAN Technical Charter to understand governance, scope, and how contributions are accepted.</p>
-            <a href="#get-involved" class="link-arrow">OpenAN Charter.md</a>
+            <a href="https://github.com/project-openan" class="link-arrow" target="_blank" rel="noopener">OpenAN Charter</a>
           </div>
           <div class="step-card">
             <div class="step-number">02</div>
@@ -470,7 +481,7 @@
     </section>
   </main>
 
-  <footer>
+  <footer role="contentinfo">
     <div class="container footer-container">
       <div class="footer-brand">
         <img src="./src/images/lfnetworking-color.svg" alt="LF Networking" class="footer-lfn-logo">
@@ -517,6 +528,6 @@
     </div>
   </footer>
 
-  <script src="./src/main.js"></script>
+  <script type="module" src="./src/main.js"></script>
 </body>
 </html>
