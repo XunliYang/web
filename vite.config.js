@@ -11,7 +11,8 @@ export default defineConfig({
         leadership: './leadership.html',
         tsc: './tsc.html',
         events: './events.html',
-        usecases: './usecases.html'
+        usecases: './usecases.html',
+        membership: './membership.html'
       }
     }
   }
